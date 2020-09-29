@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>about us</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+         .column
+        {
+            height: 500px;
+            width: 45%;
+            background-color: white;
+            margin: 20px;
+            float: left;
+        }
+        .columnn
+        {
+            height: 500px;
+            width: 30%;
+            background-color: white;
+            margin: 15px;
+            float: left;
+        }
+        .abttit
+        {
+           color: green;
+           text-align: center;
+           font-size: 40px;
+        }
+        li
+        {    position: absolute;
+       list-style: none;
+        height: 78px;
+        width: 78px;
+        color:white;
+        border-radius: 100%;
+        margin-left: 8%;
+        margin-top: -20px;
+    }
+    .huy
+    {
+        position: relative;
+        margin-left: 35%;
+        margin-top: 28%;
+    }
+    .img2
+{
+    height: 40px;
+    width: 40px;
+
+    margin-left: 400px;
+    float: left;
+    margin-top: -270px;
+    border-radius: 100%;
+}
+.img3
+{
+    height: 40px;
+    width: 40px;
+
+    margin-left: 550px;
+    float: left;
+    margin-top: -270px;
+}
+.img4
+{
+    height: 40px;
+    width: 40px;
+
+    margin-left: 700px;
+    position: absolute;
+    margin-top: 273px;
+}
+.img5
+{
+    height: 40px;
+    width: 40px;
+
+    margin-left: 850px;
+    position: absolute;
+    margin-top: 273px;
+}
+.img6
+{
+    height: 50px;
+    width: 50px;
+    margin-left: 1000px;
+    position: absolute;
+    margin-top: 273px;
+}
+.img1
+{
+    height: 50px;
+    width: 50px;
+
+    margin-left: 250px;
+    position: absolute;
+    margin-top: 273px;
+}
+
+
+    </style>
+</head>
+<body>
+    <h1 id="a5" class="abttit">CREATIVE TIM</h1>
+<div id="a1">
+    <div class="column"; style="font-size: 30px; padding-left: 3px;"><br><br><br><h2>Fully coded UI Tools to create web apps.</h2>
+        <p> UI kits and dashboards built on top of Bootstrap , Vue.js , React and Angular</p></div>
+        <div class="column"; style="background-image: url({{ url_for('static',filename='images/comp.jpg') }});background-size: 560px;background-repeat: no-repeat;"></div>
+</div>
+
+    <br>
+
+    <h1 id="a5" class="abttit">Area of expertise</h1>
+    <div id="a1">
+        <div class="columnn"; style="font-size: 25px; padding-left: 3px;"><ul><li style="background-color: lightskyblue;"><i class="fa fa-file huy"></i></li></ul><br><br><h4 style="text-align: center;">Create UI Frameworks</h4>
+ <p style="color: darkgray;text-align: center;">We have created the tools that will help you in your next project. From plugins to complex kits, we've got you covered in all areas regarding front-end development. </p></div>
+ <div class="columnn"; style="font-size: 25px; padding-left: 3px;"><ul><li style="background-color: palevioletred;"><i class="fa fa-pie-chart huy"></i></li></ul><br><br><h4 style="text-align: center;">Share Freebeis</h4>
+    <p style="color: darkgray;text-align: center;">Everything that we used to create our products can be downloaded for free under MIT License. People have already trusted and used them in thousands of sites.</p></div>
+    <div class="columnn"; style="font-size: 25px; padding-left: 3px;"><ul><li style="background-color: lightgreen;"><i class="fa fa-rocket huy"></i></li></ul><br><br><h4 style="text-align: center;">Power Hackathons</h4>
+        <p style="color: darkgray;text-align: center;">We've sponsored many hackathons around the world with the tools that they need to make awesome web applications. Our UI tools go hand in hand with startups.</p></div>
+</div>
+    <h1 id="a5" class="abttit">Our Technologies </h1>
+    <div id="a4">
+    <div class="column"; style="font-size: 40px; width: 100%;text-align: center;">Our products are built on top of modern frameworks. Having the coded and the designed versions for the same framework, your designers and developers will talk the same language.</div>
+    <div class="img2">
+        <img src="{{ url_for('static',filename='images/html.png') }}" alt="html" style="height: 60px; width: 60px;">
+    </div>
+    <div class="img3">
+        <img src="{{ url_for('static',filename='images/C++.png') }}" alt="C++" style="height: 60px; width: 60px;">
+    </div>
+    <div class="img4">
+        <img src="{{ url_for('static',filename='images/css.png') }}" alt="css" style="height: 60px; width: 60px;">
+    </div>
+    <div class="img5">
+        <img src="{{ url_for('static',filename='images/j1.png') }}" alt="java" style="height: 60px; width: 60px;">
+    </div>
+    <div class="img6">
+        <img src="{{ url_for('static',filename='images/apk.png') }}" alt="android" style="height: 60px; width: 60px;">
+    </div>
+    <div class="img1">
+        <img src="{{ url_for('static',filename='images/py.png') }}" alt="python" style="height: 60px; width: 60px;">
+    </div>
+</div>
+<h1 id="a5" class="abttit">Solutions For You </h1>
+
+<div id="a1">
+    <div class="column"; style="background-image: url({{ url_for('static',filename='images/y.jpg') }});background-size: 600px;background-repeat: no-repeat;"></div>
+<div class="column"; style="font-size: 25px; padding-left: 3px;"><ul><li style="margin-left: -40px;background-color: lightgreen;"><i class="fa fa-file huy"></i></li></ul><h4 style="text-align: center;">UI Kits & Example Pages</h4>
+<p style="color: darkgray;text-align: center;"> The easiest way to get started is to use one of our pre-built example pages. From landing pages to e-commerce or blog pages, you will be able jump start your development. Show your clients a quick prototype that can be made in minutes!
+</p>
+<ul><li style="margin-left: -40px;background-color: pink;"><i class="fa fa-cube huy"></i></li></ul><h4 style="text-align: center;"> Pre-Made Sections & Elements</h4>
+    <p style="color: darkgray;text-align: center;">Build pages in no time using pre-made sections and elements! From headers to footers, you will be able to choose the best combination for your project.</p></div>
+</div>
+    <div id="a4">
+    <div class="column"; style="font-size: 30px; width: 100%; background-image: url('mappp.jpg');text-align: center;"><br><br><br><br><br><br><ul><li style="margin-left: 550px;"></li></ul><br><br><br><div class="row">
+        <div class="col-sm-6" style="background-color:white; border:1px solid black; width: 50px; height: 70px;position: relative;margin-left: 450px;color:black; font-size: 50px;text-align: center;">1</div>
+        <div class="col-sm-6" style="background-color:white; border:1px solid black; width: 50px; height: 70px;position: relative;margin-left: 520px;color:black; font-size: 50px;text-align: center;margin-top: -5.8%;">2</div>
+        <div class="col-sm-6" style="background-color:white; border:1px solid black; width: 50px; height: 70px;position: relative;margin-left: 572px;color:black; font-size: 50px;text-align: center;margin-top: -5.75%;">1</div>
+        <div class="col-sm-6" style="background-color:white; border:1px solid black; width: 50px; height: 70px;position: relative;margin-left: 622px;color:black; font-size: 50px;text-align: center;margin-top: -5.75%;">0</div>
+        <div class="col-sm-6" style="background-color:white; border:1px solid black; width: 50px; height: 70px;position: relative;margin-left: 685px;color:black; font-size: 50px;text-align: center;margin-top: -5.75%;">1</div>
+        <div class="col-sm-6" style="background-color:white; border:1px solid black; width: 50px; height: 70px;position: relative;margin-left: 737px;color:black; font-size: 50px;text-align: center;margin-top: -5.75%;">1</div>
+        <div class="col-sm-6" style="background-color:white; border:1px solid black; width: 50px; height: 70px;position: relative;margin-left: 789px;color:black; font-size: 50px;text-align: center;margin-top: -5.75%;">3</div>
+
+      </div><h3 style="text-align: center;font-size: 30px; width: 100%; background-image: url({{ url_for('static',filename='images/mappp.jpg') }});">Developers and Companies around the world using our products.</h3></div>
+</div>
+</body>
+</html>
+
+

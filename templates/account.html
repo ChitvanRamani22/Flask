@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+        body
+        {
+    margin: 0px;
+    padding: 0px;
+    background:linear-gradient(grey,white);
+    background-repeat: no-repeat;
+    background-size: cover;
+        }
+        .uy{
+            margin-left: -15%;
+            margin-top: 2%;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .yuo{
+            width: 200px;
+            height: 18px;
+            position: absolute;
+            margin-left: 20px;
+        }
+        .ub
+        {
+            position: absolute;
+            margin-left: 0%;
+           height: 40px;
+           width: 140px;
+           background-color: turquoise;
+           font-size: 18px;
+
+        }
+        .uv
+        {
+            position: absolute;
+            margin-left: 12%;
+           height: 40px;
+           width: 140px;
+           background-color: turquoise;
+           font-size: 20px;
+        }
+        .hu
+        {
+            position: relative;
+            margin-left: 12%;
+
+        }
+</style>
+<script>
+     function func()
+    {
+        if(document.getElementById("e").value.length>0 && document.getElementById("f").value.length>0 && document.getElementById("u").value.length>0 && document.getElementById("p").value.length>0)
+        {
+            alert('Your Information has been Saved Successfully')
+
+
+            window.location = "/";
+        }
+        else
+        alert("All compulsary fields are required")
+    }
+    function fug()
+    {
+        window.location="/";
+    }
+    function fo()
+        {
+        if(document.getElementById("p").value.length>0 && document.getElementById("p").value.length<=6)
+        document.getElementById("pg").innerHTML="<font color=red>WEAK</font>";
+
+        else if(document.getElementById("p").value.length>6 && document.getElementById("p").value.length<=10)
+        document.getElementById("pg").innerHTML="<font color=orange>GOOD</font>";
+
+        else if(document.getElementById("p").value.length>=11)
+        document.getElementById("pg").innerHTML="<font color=green>STRONG</font>";
+
+        else
+        document.getElementById("pg").innerHTML="";
+        }
+    </script>
+</head>
+<body>
+    <h1 style="text-align: center;">Account Details</h1>
+   <form style="text-align: center;" class="uy" method="post" action="/code" >
+  <i class="fa fa-user-circle fa-5x hu"></i><a href="#"><i class="fa fa-camera"> Change Profile Picture</i></a><br><br>
+   Email*: <input id="e"type="email" placeholder="Email" class="yuo" required style="margin-left:38px ;" name="t1"><br><br><br>
+   First Name*: <input  id="f" type="text" placeholder="First Name" class="yuo" required name="t2"><br><br><br>
+   Last Name: <input type="text" placeholder="Last Name" class="yuo" style="margin-left:22px ;" name="t3"><br><br><br>
+   Username*: <input  id="u" type="text" placeholder="Username" class="yuo" required style="margin-left:27px ;" name="t4"><br><br><br>
+   Password*: <input  id="p" type="password" placeholder="Password" class="yuo" required style="margin-left:27px ;" onkeyup="fo()" name="t5"><br><br><br><br>
+   <p id="pg" style="text-align: center; margin-top: -2%;margin-left: 23%;"></p>
+   Description: <input type="text" placeholder="Tell us something about yourself in 150 characters. " class="yuo" style="width: 500px;height: 70px;"name="t6"><br><br><br><br><br><br>
+   <button type="submit" value="submit" class="uv" onclick="func()" >Save</button>
+   <button type="clear" class="ub" onclick="fug()">Back To Home</button>
+   </form>
+   <p style="font-size: 14px; color: black; position: absolute;margin-top: 6%;margin-left: 32%;"> Copyright © 2020 Creative Tim, All Rights Reserved. Made with <i class="fa fa-heart" aria-hidden="true" style="color: red;"></i> for a better web.</p>
+</body>
+</html>

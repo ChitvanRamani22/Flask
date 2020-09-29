@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buy Now</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+      body{
+          background-image: url({{ url_for('static',filename='images/hyt.jpg') }});
+          background-repeat: no-repeat;
+          background-size: cover;
+          transition-duration: 2s;
+      }
+      ul li
+      {
+font-size: larger;
+      }
+      ul li:nth-child(1)
+      {
+          position: relative;
+          margin-left: 600px;
+          margin-top: 0px;
+      }
+      .add
+        {
+            width: 400px;
+            height: 320px;
+            margin-left: 35%;
+            margin-top: 7%;
+            background-color:black;
+            transition-duration: 2s;
+           position: absolute;
+
+        }
+        #cls
+        {
+            color: white;
+            text-transform: capitalize;
+            float: right;
+            transition-duration: 2s;
+        }
+        .yuo{
+            width: 240px;
+            height: 23px;
+            position: absolute;
+            margin-left: 20px;
+        }
+
+  </style>
+   <script>
+
+
+        function fyt()
+        {
+          alert('Order Placed Successfully');
+          window.location="/";
+        }
+        function close1()
+        {
+          alert('ARE YOU SURE YOU WANT TO CANCEL THE ORDER ?');
+           window.location="/";
+        }
+
+</script>
+</head>
+<body>
+   <nav class="navbar navbar-dark bg-transparent">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <img src="{{ url_for('static',filename='images/boy.jpg') }}" class="img-circle" alt="women" style="width: 60px; position: relative; margin-left: 50px;">
+            <a class="navbar-brand" style="position: absolute; margin-left: -10px; font-size: 26px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;margin-top: 0.5%;" href="#">Creative Tim</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#"><span class="glyphicon glyphicon-home" style="position: relative;margin-left: 15px;"></span><br> Home</a></li>
+
+            <li><a href="#" onclick="fu()"><span class="glyphicon glyphicon-info-sign" style="position: relative;margin-left: 25px;"></span><br> About us</a></li>
+            <li><a href="#" onclick="fuf()"><span class="glyphicon glyphicon-phone" style="position: relative;margin-left: 30px;"></span> <br>Contact Us</a></li>
+            <li><a href="#"  onclick="fuu()"><span class="glyphicon glyphicon-eject" style="position: relative;margin-left: 25px;"></span><br> Feedback</a></li>
+            <li><a href="#" onclick="fug()"><span class="glyphicon glyphicon-user" style="position: relative;margin-left: 20px;"></span><br> Account</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="add" id="add1">
+        <a id="cls" onclick="close1()">close</a><br>
+        <form method="POST">
+            <h3 style="color: white;margin-left: 5%;margin-top: 0px;">CREDIT/ DEBIT CARD</h3>
+        <input type="number" placeholder="Card Number" class="yuo" required><br><br>
+   <input type="text" placeholder="Name On Card" class="yuo" required><br><br>
+    <input type="number" placeholder="Expiry Month" class="yuo" style="width:120px;" required>
+    <input type="number" placeholder="Expiry Year" class="yuo" style="width:100px;margin-left:220px" required><br><br>
+    <input type="password" placeholder="CVV" class="yuo" style="width:60px;"><p style="color: yellow;position: absolute; margin-top: 5px;margin-left: 100px;" required>Last 3 digits printed on the back of card.</p><br><br>
+    <input type="checkbox" name="io" style="margin-left: 20px;"> Save the card for faster payments.<br><br>
+
+    <button onclick="fyt()" type="submit" class="btn btn-danger" style="margin-left: 150px;">Place Order</button>
+      </form>
+      </div>
+
+
+  </body>
+</html>

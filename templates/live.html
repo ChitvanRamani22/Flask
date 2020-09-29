@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Preview</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+.ht img
+        {
+        width: 100%;
+        height: 551px;
+        }
+        .column
+        {
+            height: 200px;
+            width: 40%;
+            background-color: white;
+            margin: 40px;
+            float: left;
+        }
+        .columnn
+        {
+            height: 400px;
+            width: 30%;
+            background-color: white;
+            margin: 20px;
+            float: left;
+        }
+        .columnn img
+        {
+margin-left: 40px;
+margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ht">
+        <img src  ="{{ url_for('static',filename='images/2.jpg') }}">
+    </div>
+  <h1 style="margin-left: 45px;">Basic Elements</h1>
+   <h2 style="margin-left: 45px;">Buttons</h2><br>
+   <div class="container">
+    <button type="button" class="btn" style="width: 40px; height: 40px;margin-left: -20px;"></button>
+    <button type="button" class="btn btn-primary" style="width: 40px; height: 40px;margin-left: 20px;"></button>
+    <button type="button" class="btn btn-warning" style="width: 40px; height: 40px;margin-left: 20px;"></button>
+    <button type="button" class="btn btn-danger" style="width: 40px; height: 40px;margin-left: 20px;"></button>
+    <button type="button" class="btn btn-link" style="width: 40px; height: 40px; margin-left: 20px;background-color: blue; border-radius: 5px;"></button>
+  </div>
+  <br><br>
+  <h2 style="margin-left: 45px;">Inputs</h2><br>
+  <div class="form-group">
+    <label for="disabledSelect" class="col-sm-2 control-label"></label>
+    <div class="col-sm-10">
+      <select id="disabledSelect" class="form-control" style="width:270px; height: 45px; margin-left: -185px;" >
+        <option>Disabled select</option>
+      </select>
+    </div>
+  </div>
+</fieldset>
+<div class="form-group has-success has-feedback">
+  <label class="col-sm-2 control-label" for="inputSuccess"></label>
+  <div class="col-sm-10">
+    <input type="text" class="form-control" id="inputSuccess" style="width:270px; height: 45px; margin-left: 125px;margin-top: -45px;" placeholder="Success">
+  </div>
+</div>
+<div class="container">
+<div class="form-group has-warning has-feedback">
+  <label class="col-sm-2 control-label" for="inputWarning"></label>
+  <div class="col-sm-10">
+    <input type="text" class="form-control" id="inputWarning" style="width:270px; height: 45px; margin-left: 580px;margin-top: -53px;" placeholder="Warning">
+  </div>
+</div>
+<div class="form-group has-error has-feedback">
+  <label class="col-sm-2 control-label" for="inputError"></label>
+  <div class="col-sm-10">
+    <input type="text" class="form-control" id="inputError" style="width:270px; height: 45px; margin-left: 880px;margin-top: -58px;" placeholder="Remove">
+
+  </div>
+</div>
+</form>
+</div>
+<div id="a1">
+    <div class="column"; style="font-size: 20px; padding-left: 3px;"><h2>Checkboxes</h2><form>
+        <div class="checkbox">
+          <label><input type="checkbox" value="">Unchecked</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="">Checked</label>
+        </div>
+        <div class="checkbox disabled">
+          <label><input type="checkbox" value="" disabled>Disabled</label>
+        </div>
+      </form> </div>
+    <div class="column"; style="font-size: 20px; padding-left: 3px;"><h2>Radio Buttons </h2><form>
+        <div class="radio">
+          <label><input type="radio" name="optradio" checked>Radio is off</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio">Radio is on</label>
+        </div>
+        <div class="radio disabled">
+          <label><input type="radio" name="optradio" disabled>Disabled</label>
+        </div>
+      </form>
+        </div>
+</div>
+<div class="container">
+    <h2 style="margin-left: -23px;">Colored Progress Bars</h2>
+
+    <div class="progress" style="margin-left: -22px;">
+      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+        40% Complete (success)
+      </div>
+    </div>
+    <div class="progress" style="margin-left: -22px;">
+      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+        50% Complete (info)
+      </div>
+    </div>
+    <div class="progress" style="margin-left: -22px;">
+      <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+        60% Complete (warning)
+      </div>
+    </div>
+    <div class="progress" style="margin-left: -22px;">
+      <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+        70% Complete (danger)
+      </div>
+    </div>
+  </div>
+  <div id="a1">
+    <div class="column"; style="font-size: 20px; padding-left: 3px;height: 250px;width: 45%;">
+      <h2 style="margin-left: 0px;">Navigation Bar</h2><br><nav class="navbar navbar-default" style="margin-top: -25px;">
+
+        <div class="navbar-header" style="margin-top: -0px;">
+          <a class="navbar-brand" href="#">WebSiteName</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Page 1</a></li>
+          <li><a href="#">Page 2</a></li>
+          <li><a href="#">Page 3</a></li>
+        </ul>
+    </nav>
+    <h2 style="margin-left: 0px;">Pagination</h2>
+    <ul class="pagination">
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+      </ul>
+    </div>
+  </div>
+    <div class="column"; style="font-size: 30px; padding-left: 3px;height: 250px;">
+      <h2 style="margin-left: 0px;">Labels</h2>
+      <button type="button" class="btn">Basic</button><br>
+        <button type="button" class="btn btn-primary">Primary</button><br>
+        <button type="button" class="btn btn-warning">Warning</button><br>
+        <button type="button" class="btn btn-danger">Danger</button>
+        </div>
+        <h2 style="margin-left: 33px;">Topography</h2>
+        <div class="container">
+            <p style="margin-top: 60px;">Header 1</p><h1 style="margin-left: 250px; position: absolute;margin-top: -45px;">Awesome Looking Header </h1>
+            <p style="margin-top: 60px;">Header 2</p> <h2 style="margin-left: 250px; position: absolute;margin-top: -45px;">Awesome Looking Header </h2>
+            <p style="margin-top: 60px;">Header 3</p> <h3 style="margin-left: 250px; position: absolute;margin-top: -45px;">Awesome Looking Header </h3>
+            <p style="margin-top: 60px;">Header 4</p>  <h4 style="margin-left: 250px; position: absolute;margin-top: -45px;">Awesome Looking Header </h4>
+            <p style="margin-top: 60px;">Header 5</p> <h5 style="margin-left: 250px; position: absolute;margin-top: -45px;">Awesome Looking Header </h5>
+            <p style="margin-top: 60px;">Header 6</p> <h6 style="margin-left: 250px; position: absolute;margin-top: -45px;">Awesome Looking Header </h6>
+            <p style="margin-top: 60px;">Paragraph</p> <p style="margin-left: 250px; position: absolute;margin-top: -45px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div id ="a3"><br>
+            <h2 style="margin-left: 45px;">Images</h2>
+            <div class="columnn">
+
+                <h2 style="text-align: center;">Rounded Corners</h2>
+
+                <img src="{{ url_for('static',filename='images/gh.jpg') }}" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+              </div>
+            <div class="columnn"><h2 style="text-align: center;">Circle</h2>
+
+                <img src="{{ url_for('static',filename='images/gh.jpg') }}" class="img-circle" alt="Cinque Terre" width="304" height="236">
+              </div>
+            <div class="columnn">
+                <h2 style="text-align: center;">Thumbnail</h2>
+
+  <img src="{{ url_for('static',filename='images/gh.jpg') }}" class="img-thumbnail" alt="Cinque Terre" width="304" height="236" >
+            </div>
+</div>
+<div class="container">
+    <h2>Collapsible Panel</h2>
+    <p>Click on the collapsible panel to open and close it.</p>
+    <div class="panel-group">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" href="#collapse1">Collapsible panel</a>
+          </h4>
+        </div>
+        <div id="collapse1" class="panel-collapse collapse">
+          <div class="panel-body">Panel Body</div>
+          <div class="panel-footer">Panel Footer</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h2>Simple Collapsible</h2>
+    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+    <div id="demo" class="collapse in">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+  </div>
+  <div class="container-fluid">
+    <h2>Carousel</h2>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+
+      <div class="carousel-inner" style="height: 600px;">
+        <div class="item active">
+          <img src="{{ url_for('static',filename='images/green.png') }}" alt="Get Shit Done" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="{{ url_for('static',filename='images/blue.png') }}" alt="Get Shit Done" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="{{ url_for('static',filename='images/red.png') }}" alt="Get Shit Done" style="width:100%;">
+        </div>
+      </div>
+
+
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <h2 style="margin-left: 40%; margin-top: 100px;">Do you like this web kit?</h2>
+  <button type="button" class="btn btn-info" style="margin-left: 43%; margin-top: 50px;height: 60px;width: 200px;font-size: 20px;">Download, It's Free!</button>
+</body>
+</html>

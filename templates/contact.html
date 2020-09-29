@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .columnn
+        {
+            height: 500px;
+            width: 30%;
+            background-color: skyblue;
+            margin: 20px;
+            float: left;
+        }
+        .cnttit
+        {
+           color: green;
+           text-align: center;
+           font-size: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="a2" class="cnttit">OUR TEAMS ARE HERE TO HELP </h1>
+<div id ="a3">
+    <div class="columnn" style="font-size: 30px;text-align: center;"><br>
+        Technical Support<br><br>
+        <img src="{{ url_for('static',filename='images/p1.jpg') }}" class="img-circle" alt="Cinque Terre" width="304" height="236">
+        <br><br><i class="fa fa-phone fa-1x "></i> 8769905642
+    </div>
+    <div id ="a3">
+        <div class="columnn" style="font-size: 30px;text-align: center;"><br>
+            Pricing and Licensing<br><br>
+            <img src="{{ url_for('static',filename='images/p2.jpg') }}" class="img-circle" alt="Cinque Terre" width="304" height="236">
+            <br><br><i class="fa fa-phone fa-1x "></i> 8224589330
+        </div>
+        <div id ="a3">
+            <div class="columnn" style="font-size: 30px;text-align: center;"><br>
+                Product Advice<br><br>
+                <img src="{{ url_for('static',filename='images/p4.jpg') }}" class="img-circle" alt="Cinque Terre" width="304" height="236">
+                <br><br> <i class="fa fa-phone fa-1x "></i> 9300118769
+            </div>
+
+</div>
+</body>
+</html>

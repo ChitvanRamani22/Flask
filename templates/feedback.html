@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        background-color: blanchedalmond;
+            }
+            .uy{
+                margin-left: 5%;
+                margin-top: 2%;
+                font-size: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+
+            }
+            .yuo{
+                width: 200px;
+                height: 26px;
+                position: absolute;
+                margin-left: 150px;
+            }
+            .io
+            {
+                position: relative;
+                margin-left: 250px;
+                font-display: center;
+
+            }
+            .ub
+            {
+                position: absolute;
+                margin-left: 33%;
+               height: 35px;
+               width: 140px;
+               background-color: crimson;
+               font-size: 18px;
+               color: white;
+
+            }
+            .uv
+            {
+                position: absolute;
+                margin-left: 45%;
+               height: 35px;
+               width: 140px;
+               background-color: crimson;
+               font-size: 20px;
+               color: white;
+            }
+        </style>
+        <script>
+            
+            function fun()
+            {
+                window.location="/";
+            }
+        </script>
+</head>
+<body>
+    <h2 style="margin-left: 10px;">Thank You for using Creative Tim services.We value all of our customers and strive to meet everyone's needs.</h2>
+    <h3 style="margin-left: 10px;">Please tell us the details you used our service:</h3>
+    <form class="uy" style="color: black" method="post" action="/cod"  >
+        1.Were you satisfied with the customer services we provided you ?<br><br>
+        <input type="radio" name="in" class="io" value="yes" style="margin-left: 180px;">Yes
+        <input type="radio" name="in" class="io" value="no" style="margin-left: 326px;">No
+        <input type="radio" name="in" class="io" value="somewhat" style="margin-left: 326px;">Somewhat<br><br>
+        Comments <input type="text" style="height: 20px; width: 600px;" name="c1"><br><br>
+        2.Was our customer service provided to you in an accessible manner ?<br><br>
+        <input type="radio" name="i" class="io" value="yes" style="margin-left: 180px;">Yes
+        <input type="radio" name="i" class="io" value="no" style="margin-left: 326px;">No
+        <input type="radio" name="i" class="io" value="somewhat"  style="margin-left: 326px;">Somewhat<br><br>
+        Comments <input type="text" style="height: 20px; width: 600px;" name="c2"><br><br>
+        3.Did you experience any problem accessing our kits or services ?<br><br>
+        <input type="radio" name="ont" class="io" value="yes" style="margin-left: 180px;">Yes
+        <input type="radio" name="ont" class="io" value="no" style="margin-left: 326px;">No
+        <input type="radio" name="ont" class="io" value="somewhat"  style="margin-left: 326px;">Somewhat<br><br>
+        Comments <input type="text" style="height: 20px; width: 600px;" name="c3"><br><br>
+        <div style="border: 1px dashed black;"></div><br>
+        Your contact information(optional):<br><br>
+        Name: <input type="text" placeholder="Name" class="yuo" name="name">
+        <span style="margin-left: 200px;"> </span>Phone Number: <input type="number" placeholder="Phone Number" class="yuo" name="phone"><br><br><br>
+        Email: <input type="email" placeholder="Email" class="yuo" name="mail"><br><br><br>
+        <button type="submit" value="submit" class="uv" >Submit</button>
+        <button type="clear" class="ub" onclick="fun()">Back To Home</button>
+        </form>
+</body>
+</html>
